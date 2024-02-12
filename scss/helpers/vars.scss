@@ -1,0 +1,30 @@
+/******************** variables ********************/
+
+/*$breakpoints: (
+  movil  		: 480px,
+  movil-h 	: 640px,
+  tablet 		: 769px,
+  tablet-h  : 1025px,
+  tablet-w  : 1344px,
+  laptop  	: 1367px
+);*/
+
+$xs: ('min-width: 365px');//landscape phones
+$sm: ('min-width: 576px');//landscape phones
+$md: ('min-width: 768px');//tablet
+$lg: ('min-width: 992px');//desktop
+$xl: ('min-width: 1200px');//large desktop
+$xxl:('min-width:  1280px');//xlarge desktop
+
+// color
+$white: #fff;
+$colorPrimary: #195153;
+$colorText: #718096;
+$red: #DA291C;
+
+$path: "../assets";
+//$path: "https://static.claro.com.pe/landings/havas/2023/portabilidad/v1/assets";
+$path-netflix: "https://www.claro.com.pe/portal/pe-2020/recursos_contenido/claro-home";
+$path-fibraoptica: "https://www.claro.com.pe/portal/pe-2020/recursos_contenido/claro-home";
+
+$pathfonts: "../fonts";

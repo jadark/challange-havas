@@ -1,0 +1,23 @@
+mixin block_content
+	block content
+mixin block_css
+	block css
+mixin block_javascript
+	block javascript
+mixin block_modal
+	block modal
+
+mixin priceItem(ribbon, title, subtitle, megas, callText, callNumber, sms)
+	.prices__content__list__item
+		.prices__content__list__item__header
+			.prices__content__list__item__header__ribbon
+				.prices__content__list__item__header__ribbon--text= ribbon
+			.prices__content__list__item__header__title= title
+			.prices__content__list__item__header__subtitle= subtitle
+		.prices__content__list__item__body
+			.prices__content__list__item__body__description
+				span.prices__content__list__item__body__description__megas= megas
+				span.prices__content__list__item__body__description__calls
+					span.text= callText
+					span.number= callNumber
+				span.prices__content__list__item__body__description__sms= sms

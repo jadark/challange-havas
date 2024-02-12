@@ -1,0 +1,33 @@
+extends includes/master
+
+block vars
+	- var script = 1;
+	- var css = 1;
+	- var title = 'Challange';
+	- var modal = 1;
+
+block content
+	.home
+		.wrapper
+			.prices
+				.prices__header
+					.prices__header__tab.pesTab(data-tab="price-3")
+						span.text S/ 3
+					.prices__header__tab.pesTab(data-tab="price-5")
+						span.text S/ 5
+					.prices__header__tab.pesTab(data-tab="price-7")
+						span.text S/ 7
+				.prices__content
+					.prices__content__list.conTab
+						+priceItem("Recarga", "Por S/ 3", "Recibe por 1 día", "50 MS", "Llamadas ilimitadas", "515", "SMS")
+						+priceItem("Crece tu recarga", "Bono mejorado", "Recibe por 2 días", "200 MS", "Llamadas ilimitadas", "1015", "SMS")
+
+					.prices__content__list.conTab
+						+priceItem("Recarga", "Por S/ 5", "Recibe por 1 día", "60 MS", "Llamadas ilimitadas", "515", "SMS")
+						+priceItem("Crece tu recarga", "Bono mejorado", "Recibe por 2 días", "200 MS", "Llamadas ilimitadas", "1015", "SMS")
+					.prices__content__list.conTab
+						+priceItem("Recarga", "Por S/ 7", "Recibe por 1 día", "70 MS", "Llamadas ilimitadas", "515", "SMS")
+						+priceItem("Crece tu recarga", "Bono mejorado", "Recibe por 2 días", "200 MS", "Llamadas ilimitadas", "1015", "SMS")
+
+block javascript	
+	script(src=path+"js/main.js")

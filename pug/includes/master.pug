@@ -1,0 +1,36 @@
+include mixin
+
+- var path = "";
+
+
+block vars
+doctype
+html(lang='es')
+	head
+		title #{title}
+		meta(http-equiv='Content-Type' content='text/html;charset=UTF-8')
+		meta(name='viewport' content='width=device-width,initial-scale=1')
+		meta(name="description" content="Project description")
+
+
+		if css == 1
+			+block_css
+
+		link(rel='stylesheet' type='text/css' href=path+'css/common.css' charset="utf-8")
+
+		link(rel="preconnect" href="https://fonts.gstatic.com")
+
+	body
+		.layout#app
+			.layout__main
+				+block_content
+
+			if modal == 1
+				+block_modal
+
+		.load_ing#load_er
+			img(src='https://www.claro.com.pe/portal/pe-2020/recursos_contenido/claro-home/7e3e6f3b-2d43-4906-948c-25d3d00aa81e-loadingClaro.gif' alt='')
+
+
+		if script == 1
+			+block_javascript

@@ -76,6 +76,13 @@
 		}
 		&__list{
 			display: flex;
+			flex-flow: column;
+			gap: 1.4rem;
+			align-items: center;
+			@media ($md){
+				flex-flow: row wrap;
+				justify-content: center;
+			}
 			&__item{
 				box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
 				max-width: 300px;
